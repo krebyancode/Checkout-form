@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <h1>Checkout</h1>
+    <div class="form">
+        <div class="info">
+            <h3>Contact Information</h3>
+            <div class="contact-info">
+                <label for="email">Email</label><br>
+                <input class="input-box" type="email" name="e-mail" id="email" placeholder="Enter your email...">
+                <i class="fas fa-envelope"></i><br>
+                <label for="tel">Phone</label><br>
+                <input class="input-box" type="tel" name="phone" id="tel" placeholder="Enter your phone...">
+                <i class="fas fa-phone"></i><br>
+            </div>
+            <h3>Shipping address</h3>
+            <div class="shipping-info">
+                <label for="name">Full name</label><br>
+                <input class="input-box" type="text" name="fullname" id="name" placeholder="Enter your full name...">
+                <i class="fas fa-user-alt"></i><br>
+                <label for="address">Address</label><br>
+                <input class="input-box" type="text" name="address" id="address" placeholder="Enter your address...">
+                <i class="fas fa-home"></i><br>
+                <label for="city">City</label><br>
+                <input class="input-box" type="text" name="city" id="city" placeholder="Enter your city...">
+                <i class="fas fa-city"></i><br>
+                <div class="country-info">
+                    <label for="country">Country</label><br>
+                    <select id="selection-box" name="country" class="country">
+                        <option value="turkey">Turkey</option>
+                        <option value="usa">US</option>
+                        <option value="uk">UK</option>
+                        <option value="canada">Canada</option>
+                    </select>
+                    <i id="globe" class="fas fa-globe-europe"></i><br>
+                </div>
+                <div class="postal-info">
+                    <label for="postal">Post code</label><br>
+                    <input class="input-box-post" type="text" name="postalcode" id="postal" placeholder="Enter your postal code...">
+                    <i id="mailbulk" class="fas fa-mail-bulk"></i>
+                </div>
+                <div id="clean"></div>
+                <br>
+                <input type="checkbox" name="save-info">See this Information next time <br>
+                <div class="continue-button">
+                    <button id="continue" type="submit">Continue</button>
+                </div>
+            </div>
+        </div>   
+        <div class="check-box">
+            <div class="product-box">
+                <img src="./images/photo1.png" alt="backpack" id="picture1">
+                <div class="product-description">
+                    <h4>Vintage Backbag</h4>
+                    <p><strong>$54.99</strong><span> $94.99</span></p>
+                    <div class="qty-box">
+                        <button id="minus">-</button>
+                        <span id="qty">1</span>
+                        <button id="plus">+</button>
+                    </div>
+                </div>
+            </div>
+            <div class="product-box">
+                <img src="./images/photo2.png" alt="shoes" id="picture2">
+                <div class="product-description">
+                    <h4>Levi Shoes</h4>
+                    <p><strong>$74.99</strong><span> $124.99</span></p>
+                    <div class="qty-box">
+                        <button id="minus">-</button>
+                        <span id="qty">1</span>
+                        <button id="plus">+</button>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="price-table">
+                    <hr>
+                    <div class="price-description">Shipping</div>
+                    <div class="price">$19</div>
+                    <br> 
+                    <hr>
+                    <div class="price-description">Total</div>
+                    <div class="price">$148.98</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
